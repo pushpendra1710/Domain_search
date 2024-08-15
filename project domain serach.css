@@ -1,0 +1,138 @@
+/* General body styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #d7eef5;
+    margin: 0;
+    padding: 0;
+}
+
+/* Header styles */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #d7eef5;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+    font-size: 24px;
+}
+
+header nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+header nav ul li {
+    margin-right: 20px;
+}
+
+header nav ul li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    cursor: pointer;
+} /* underline or pointer */
+
+header nav ul li a:hover {
+    text-decoration: underline;
+}/* underline */
+
+/* Search bar styles */
+.search-bar {
+    display: flex;
+    align-items: center;
+    background-color: white;
+    padding: 8px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    width: 600px;
+    position: relative;
+    margin: 40px auto;
+}
+
+.search-bar input[type="text"] {
+    border: none;
+    padding: 18px;
+    font-size: 16px;
+    border-radius: 18px;
+    outline: none;
+    flex-grow: 1;
+    padding-left: 40px; /* Space for the icon */
+    background-color:white;
+}
+
+.search-bar input::placeholder {
+    color: #aaa;
+}
+
+.search-bar button {
+    padding: 10px 20px;
+    background-color: #90ee90;
+    color: #333;
+    font-size: 16px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: bold;
+    width:150px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.search-bar button:hover {
+    background-color: #8be48e;
+}
+
+/* Search icon styles */
+.search-icon {
+    position: absolute;
+    left: 15px;
+    color: #aaa;
+    font-size: 24px;
+    pointer-events: none;
+}
+
+/* Results list styling */
+#results {
+    list-style: none;
+    margin-top: 20px;
+    padding: 0;
+    width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+#results {
+    list-style-type: none;
+    padding: 0;
+    max-width: 600px;
+    margin: 0 auto;
+    background-color: rgb(219, 210, 210);
+    border: 2px;
+    border-radius: 5px;
+    padding:auto;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}/* make a column with color size  in canter */
+
+#results li {
+    padding: 10px;
+    font-size: 16px;
+    margin-bottom: 5px;
+    display: flex;
+    align-items: center;
+    border: 1px solid #e0e0e0;
+    border-radius: 5px;
+}
+
+#results li.success {
+    background-color: #ccffcc;
+    color: #155724;
+}/* make the results  in green color */
+
+#results li.failure {
+    background-color: #ffe6e6;
+    color: #c43c2a;
+} /* make the results in red color */
